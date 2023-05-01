@@ -1,5 +1,6 @@
 import React from 'react';
+import Layout from '@/components/Layout';
 
 export default function addEvent() {
-	return <div>Add Event</div>;
+	return <Layout>Add Event</Layout>;
 }
