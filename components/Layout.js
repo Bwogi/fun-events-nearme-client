@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Styles from '../styles/Layout.module.css';
 
 export default function Layout({ title, keywords, description, children }) {
 	return (
@@ -14,8 +15,7 @@ export default function Layout({ title, keywords, description, children }) {
 					content={keywords}
 				/>
 			</Head>
-
-			{children}
+			<div className={Styles.container}>{children}</div>
 		</div>
 	);
 }
